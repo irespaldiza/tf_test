@@ -5,14 +5,14 @@ terraform {
       version = "3.50.0"
     }
   }
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "okteto-test"
+  # backend "remote" {
+  #   hostname     = "app.terraform.io"
+  #   organization = "okteto-test"
 
-    workspaces {
-      prefix = "test-"
-    }
-  }
+  #   workspaces {
+  #     prefix = "test-"
+  #   }
+  # }
 }
 
 provider "google" {
