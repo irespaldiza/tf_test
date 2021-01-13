@@ -11,3 +11,12 @@ variable "gcp_project" {
 
 variable "gcp_region" {
 }
+
+variable "domain" {
+  description = "Top level domain."
+  type        = string
+}
+variable "release_name" {
+  description = "Name of the project"
+  type        = string
+}
